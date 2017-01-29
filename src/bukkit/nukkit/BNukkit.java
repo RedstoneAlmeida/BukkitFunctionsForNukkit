@@ -10,13 +10,7 @@ public class BNukkit extends PluginBase implements Listener{
   }
 
   public static void createInventory(Player player, int type, String name){
-       if(name == null){
-            return;
-       }
-       if(type == null){
-            return;
-       }
-       if(player == null){
+       if(name == null || type == null || player == null){
             return;
        }
   }
