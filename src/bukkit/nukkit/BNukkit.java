@@ -5,13 +5,19 @@ import cn.nukkit.plugin.PluginBase;
 
 public class BNukkit extends PluginBase implements Listener{
   
-  public static void createInventory(Player player, int size){
-        createInventory(player, size, null);
+  public static void createInventory(Player player, int type){
+        createInventory(player, type, null);
   }
 
-  public static void createInventory(Player player, int size, String name){
+  public static void createInventory(Player player, int type, String name){
        if(name == null){
-          return;
+            return;
+       }
+       if(type == null){
+            return;
+       }
+       if(player == null){
+            return;
        }
   }
 
